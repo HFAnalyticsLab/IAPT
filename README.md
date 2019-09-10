@@ -1,15 +1,19 @@
----
-output:
-  html_document:
-    toc: true
-    keep_md: true
----
 
 # Variation in IAPT annual data
 
 This project takes at the [annual IAPT data](https://digital.nhs.uk/data-and-information/publications/statistical/psychological-therapies-annual-reports-on-the-use-of-iapt-services) published by NHS Digital and creates graphs showing variation by demographic groups. 
 
-#### Status: Active
+#### Status: In Progress
+
+## Contents
+* [Project Description](https://github.com/HFAnalyticsLab/IAPT/blob/master/README.md#project-description)
+* [Data Sources](https://github.com/HFAnalyticsLab/IAPT/blob/master/README.md#data-sources)
+* [How does it work?](https://github.com/HFAnalyticsLab/IAPT#how-does-it-work)
+* [Requirements](https://github.com/HFAnalyticsLab/IAPT#requirements)
+* [Getting started](https://github.com/HFAnalyticsLab/IAPT#getting-started)
+* [Authors](https://github.com/HFAnalyticsLab/IAPT#authors---please-feel-free-to-get-in-touch)
+* [License](https://github.com/HFAnalyticsLab/IAPT#license)
+
 
 ## Project Description
 This project examines the publicly available data on the NHS IAPT (Increasing Access to Psychological Therapies) programme. Aggregate data is made available regularly and published by NHS Digital - here we take the annual data and explore the variation in the dataset, by demographic group. 
@@ -21,15 +25,12 @@ Cross-sectional code uses:
 
 - [2018/2019 data](https://digital.nhs.uk/data-and-information/publications/statistical/psychological-therapies-annual-reports-on-the-use-of-iapt-services/annual-report-2018-19) 
 
-
 Longitudinal code uses:  
 
 - [2018/2019 data](https://digital.nhs.uk/data-and-information/publications/statistical/psychological-therapies-annual-reports-on-the-use-of-iapt-services/annual-report-2018-19)   
 - [2017/2018 data](https://digital.nhs.uk/data-and-information/publications/statistical/psychological-therapies-annual-reports-on-the-use-of-iapt-services/annual-report-2017---18)  
 - [2016/2017 data](https://digital.nhs.uk/data-and-information/publications/statistical/psychological-therapies-annual-reports-on-the-use-of-iapt-services/annual-report-2016-17)  
 - [2015/2016 data](https://digital.nhs.uk/data-and-information/publications/statistical/psychological-therapies-annual-reports-on-the-use-of-iapt-services/annual-report-2015-16)  
-
-
 
 ## How does it work?
 
