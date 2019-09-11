@@ -32,7 +32,7 @@ Longitudinal code uses:
 - [2016/2017 data](https://digital.nhs.uk/data-and-information/publications/statistical/psychological-therapies-annual-reports-on-the-use-of-iapt-services/annual-report-2016-17)  
 - [2015/2016 data](https://digital.nhs.uk/data-and-information/publications/statistical/psychological-therapies-annual-reports-on-the-use-of-iapt-services/annual-report-2015-16)  
 
-The format and scope of the data made available by NHS Digital changes over time. The earliest available data is from 2012/13, but we have not included earlier data releases in our analysis due to limitations in its scope.  
+The format and scope of the data made available by NHS Digital changes over time. The earliest available data is from 2012/13, but we have not included earlier data releases in our analysis due to limitations in its scope. Note that depending on the year, files are sometimes provided in .zip or .rar formats and will need to be extracted. 
 
 ## How does it work?
 
