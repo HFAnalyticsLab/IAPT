@@ -1,7 +1,7 @@
 
 # Variation in IAPT annual data
 
-This project takes at the [annual IAPT data](https://digital.nhs.uk/data-and-information/publications/statistical/psychological-therapies-annual-reports-on-the-use-of-iapt-services) published by NHS Digital and creates graphs showing variation by demographic groups. 
+This project takes the [annual IAPT data](https://digital.nhs.uk/data-and-information/publications/statistical/psychological-therapies-annual-reports-on-the-use-of-iapt-services) published by NHS Digital and creates graphs showing variation by demographic groups. 
 
 #### Status: In Progress
 
@@ -31,6 +31,8 @@ Longitudinal code uses:
 - [2017/2018 data](https://digital.nhs.uk/data-and-information/publications/statistical/psychological-therapies-annual-reports-on-the-use-of-iapt-services/annual-report-2017---18)  
 - [2016/2017 data](https://digital.nhs.uk/data-and-information/publications/statistical/psychological-therapies-annual-reports-on-the-use-of-iapt-services/annual-report-2016-17)  
 - [2015/2016 data](https://digital.nhs.uk/data-and-information/publications/statistical/psychological-therapies-annual-reports-on-the-use-of-iapt-services/annual-report-2015-16)  
+
+The format and scope of the data made available by NHS Digital changes over time. The earliest available data is from 2012/13, but we have not included earlier data releases in our analysis due to limitations in its scope.  
 
 ## How does it work?
 
