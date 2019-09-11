@@ -39,7 +39,10 @@ rsconnect/
 Data/
  
 # Figure outputs
-/Figure
+Figures/
 
 # html outputs
 *.html
+
+# markdown; comments and blog
+*.Rmd
