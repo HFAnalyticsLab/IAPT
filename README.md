@@ -58,7 +58,7 @@ The following R packages are used (all available on CRAN):
 
 1. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).  
 2. Raw data can be downloaded from [NHS Digital](https://digital.nhs.uk/data-and-information/publications/statistical/psychological-therapies-annual-reports-on-the-use-of-iapt-services)
-3. A brief description of all [Scripts](*Repo folder containing data processing scripts/notebooks*) is given below:
+3. A brief description of all scripts (contained in [R](https://github.com/HFAnalyticsLab/IAPT/tree/master/R)) is given below:
 
 -  **00_SetUp.R** - loads packages, defines functions for creating graphs
 -  **01_CrossSec_Data_Vis.R** - creates graphs showing variation within 2018/19 by demographic group
