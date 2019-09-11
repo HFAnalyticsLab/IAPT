@@ -45,4 +45,5 @@ Figures/
 *.html
 
 # markdown; comments and blog
+/RMarkdown
 *.Rmd
