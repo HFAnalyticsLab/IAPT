@@ -31,5 +31,3 @@ Data/
 # markdown; comments and blog
 /RMarkdown
 *.Rmd
-# figures
-*.png
