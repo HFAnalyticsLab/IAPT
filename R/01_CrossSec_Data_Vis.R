@@ -61,16 +61,41 @@ plot_list[[2]]<- bar_fun2(Subset_IAPT_Data, "VariableA", measure_var[3]) + labs(
 plot_list[[3]]<- bar_fun2(Subset_IAPT_Data, "VariableA", measure_var[4]) + labs(y = "Percentage Receiving Treatment, when not case") # + ylim(0, 12) + geom_hline(yintercept = Total_England$PercentNotCase, colour="black", linetype = "dashed")  
 plot_list[[4]] <- bar_fun2(Subset_IAPT_Data, "VariableA", measure_var[5]) + geom_hline(yintercept = 50, colour="black")  + labs(y = "Percentage Achieving Recovery") # + ylim(0, 70) + geom_hline(yintercept = Total_England$PercentageRecovery, colour="black", linetype = "dashed")
 
-## @knitr depriv-plot-referral-treatment
-plot_grid(plotlist=plot_list[c(1:2)],
-          align = 'vh',
-          labels = c('A', 'B'),
-          hjust = -1,
-          nrow = 1)
+## @knitr depriv-plot-referral-treatment-count
+print(plot_list[[1]])
 
+## @knitr depriv-plot-referral-treatment-percent
+print(plot_list[[2]])
 
 ## @knitr depriv-plot-not-case
 print(plot_list[[3]])
 
 ## @knitr depriv-plot-recovery
 print(plot_list[[4]])
+
+
+# Process ethnicity-level data  --------------------------------------------------------
+
+
+## @knitr select-ethnicity-data
+Ethnic_England_IAPT_18_19 <- England_IAPT_18_19 %>% 
+  filter(VariableType == "Ethnic Group") %>% 
+  remove_empty("cols") %>% 
+  filter(VariableB == "All")
+
+#reorder factors
+Ethnic_England_IAPT_18_19 <- Ethnic_England_IAPT_18_19 %>%
+  mutate(VariableA = fct_relevel(VariableA, "White", "Asian or Asian British", "Black or Black British", "Mixed", "Other Ethnic Groups", "Not stated/Not known/Invalid"))
+
+# Process sexual-orientation-level data  --------------------------------------------------------
+
+
+## @knitr select-sex-orient-data
+Sex_Orient_England_IAPT_18_19 <- England_IAPT_18_19 %>%
+  filter(VariableType == "Sexual Orientation") %>% 
+  remove_empty("cols")
+
+#Reorder factors 
+Sex_Orient_England_IAPT_18_19 <- Sex_Orient_England_IAPT_18_19 %>%
+  mutate(VariableA = fct_relevel(VariableA, "Heterosexual", "Gay/Lesbian", "Bi-sexual", "Not stated/Not known/Invalid"))
+

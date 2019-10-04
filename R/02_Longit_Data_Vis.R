@@ -129,25 +129,11 @@ Long_Depriv_England <- group_by(Long_Depriv_England, Year) %>%
 
 
 # Plotting longitudinal data ----------------------------------------------
+## @knitr long-depriv-plot-referral_count
+line_fun(Long_Depriv_England, "CountReferralsReceived", "Count of referrals received", "Count")  
 
-## @knitr long-depriv-plot-referral
-p1<-line_fun(Long_Depriv_England, "CountReferralsReceived", "Count of referrals received", "Count")  
-p2<-line_fun(Long_Depriv_England, "PercentReferralsReceived", "Percentage of all referrals received", "Percentage")   
-legend <- get_legend(
-  p1 + 
-    guides(color = guide_legend(nrow = 2)) +
-    theme(legend.position = "bottom")
-)
-
-
-prow<-plot_grid(p1 + theme(legend.position="none"),
-                p2 + theme(legend.position="none"),
-                align = 'vh',
-                labels = c('A', 'B'),
-                hjust = -1,
-                nrow = 1)
-
-plot_grid(prow, legend, ncol = 1, rel_heights = c(1, .1))
+## @knitr long-depriv-plot-referral_percent
+line_fun(Long_Depriv_England, "PercentReferralsReceived", "Percentage of all referrals received", "Percentage")   
 
 ## @knitr long-depriv-plot-not-case
 line_fun(Long_Depriv_England, "PercentNotCase", "Percentage receiving treatment, when not at caseness", "Percentage") 
