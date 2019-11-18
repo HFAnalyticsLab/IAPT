@@ -31,3 +31,4 @@ Data/
 # markdown; comments and blog
 /RMarkdown
 *.Rmd
+/Medium_Blog
