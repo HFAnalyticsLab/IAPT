@@ -20,8 +20,8 @@ measures.
 ### Number of referrals in 2018/19
 
 Figure 1 shows the number of referrals per deprivation decile which
-ended in 2018/19. ![](README_files/figure-gfm/referral-1.png)<!-- -->
-*Figure 1*
+ended in 2018/19.
+![](README_files/figure-gfm/referral-plot-1-1.png)<!-- --> *Figure 1*
 
 ### Percentage of referrals receiving treatment in 2018/19
 
@@ -29,7 +29,7 @@ In the IAPT programme, patients who have attended at least two treatment
 appointments (excluding follow up) are considered to have completed
 treatment. Figure 2 shows the percentage of patients per deprivation
 decile with an ended referral in 2018/19 who completed treatment.
-![](README_files/figure-gfm/treatment-1.png)<!-- --> *Figure 2*
+![](README_files/figure-gfm/treatment-plot-2-1.png)<!-- --> *Figure 2*
 
 ### Percentage of treated patients reaching recovery in 2018/19
 
@@ -46,4 +46,4 @@ treatment should achieve recovery.
 Figure 3 shows the percentage of patients receiving treatment who
 reached recovery, by deprivation decile.
 
-![](README_files/figure-gfm/recovery-1.png)<!-- --> *Figure 3*
+![](README_files/figure-gfm/recovery-plot-3-1.png)<!-- --> *Figure 3*

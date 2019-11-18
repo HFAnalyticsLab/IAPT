@@ -70,3 +70,19 @@ Depriv_England_IAPT_18_19 <- England_IAPT_18_19 %>%
   filter(VariableA != "Not stated/Not known/Invalid") %>% 
   remove_empty("cols")
 
+# Plot figure 1  --------------------------------------------------------
+
+## @knitr referral-plot-1
+bar_red_labelled(Depriv_England_IAPT_18_19, "VariableA", "CountEndedReferrals") + labs(y = "Number of Referrals", x= "Area-level Indices of Deprivation Decile")
+
+# Plot figure 2  --------------------------------------------------------
+
+## @knitr treatment-plot-2
+bar_red_labelled(Depriv_England_IAPT_18_19, "VariableA", "PercentFinishedTreatment") + labs(y = "Percentage of referrals completing treatment", x= "Area-level Indices of Deprivation Decile")
+
+# Plot figure 3  --------------------------------------------------------
+
+## @knitr recovery-plot-3
+
+bar_red_labelled(Depriv_England_IAPT_18_19, "VariableA", "PercentageRecovery") + labs(y = "Percentage of treated patients reaching recovery", x= "Area-level Indices of Deprivation Decile")
+
