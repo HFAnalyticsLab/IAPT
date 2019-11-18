@@ -68,6 +68,11 @@ The following R packages are used (all available on CRAN):
 
 **00_SetUp.R** should be run first - order is unimportant for other scripts. 
 
+### Technical Appendix
+
+This repo also contains a [Technical_Appendix](https://github.com/HFAnalyticsLab/IAPT/tree/master/Technical_Appendix) directory which a document which supported the Health Foundation response to the government’s consultation on “Advancing our health: prevention in the 2020s”. The code used to generate these plots is contained within the R subdirectory within this folder for completeness. 
+
+
 
 ## Authors - please feel free to get in touch
 
