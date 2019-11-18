@@ -70,7 +70,7 @@ The following R packages are used (all available on CRAN):
 
 ### Technical Appendix
 
-This repo also contains a [Technical_Appendix](https://github.com/HFAnalyticsLab/IAPT/tree/master/Technical_Appendix) directory which a document which supported the Health Foundation response to the government’s consultation on “Advancing our health: prevention in the 2020s”. The code used to generate these plots is contained within the R subdirectory within this folder for completeness. 
+This repo also contains a [Technical_Appendix](https://github.com/HFAnalyticsLab/IAPT/tree/master/Technical_Appendix) directory which a document which supported the Health Foundation response to the government’s consultation on “Advancing our health: prevention in the 2020s”. The code used to generate these plots is contained within the [R](https://github.com/HFAnalyticsLab/IAPT/tree/master/Technical_Appendix/R) subdirectory within this folder for completeness. 
 
 
 
