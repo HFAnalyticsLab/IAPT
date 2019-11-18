@@ -29,6 +29,7 @@ Data/
 # html outputs
 *.html
 # markdown; comments and blog
+/Outputs
 /RMarkdown
 *.Rmd
 /Medium_Blog
