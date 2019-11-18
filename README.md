@@ -34,10 +34,17 @@ Longitudinal code uses:
 
 The format and scope of the data made available by NHS Digital changes over time. The earliest available data is from 2012/13, but we have not included earlier data releases in our analysis due to limitations in its scope. Note that depending on the year, files are sometimes provided in .zip or .rar formats and will need to be extracted. 
 
+**Please note** that the labelling provided by NHS Digital within this dataset for IMD deprivation deciles ("01 least deprived" through to "10 most deprived") do not match the labelling used by the ONS, where the most deprived decile is labelled as decile 1, with the least deprived labelled as decile 10. 
+
 ## How does it work?
 
 This analysis can be fully reproduced as the data for this analysis is publicly available and can be downloaded from the NHS Digital website. 
-A series of graphs will be produced which show variation by demographic group. 
+A series of graphs will be produced which show variation by IMD deprivation decile. 
+
+Within the project directory:
+All scripts are stored within ./R/
+The scripts expect data to be stored in ./Data/Raw_Annual_Data/
+The plots created will be saved as .pngs to ./Outputs/
 
 ### Requirements
 
@@ -45,17 +52,13 @@ These scripts are written in R (version 3.6.1 (2019-07-05) -- "Action of the Toe
 The following R packages are used (all available on CRAN):  
 
 - [here](https://cran.r-project.org/package=here)  
-- [knitr](https://cran.r-project.org/package=knitr)  
-- [readxl](https://cran.r-project.org/package=readxl)  
 - [tidyverse](https://cran.r-project.org/package=tidyverse)  
-- [janitor](https://cran.r-project.org/package=janitor)  
-- [scales](https://cran.r-project.org/package=scales)  
-- [cowplot](https://cran.r-project.org/package=cowplot)  
-- [magrittr](https://cran.r-project.org/package=magrittr)  
-- [tidylog](https://cran.r-project.org/package=tidylog)  
-
-
-
+- [scales](https://cran.r-project.org/package=scales)
+- [tidylog](https://cran.r-project.org/package=tidylog)
+- [janitor](https://cran.r-project.org/package=janitor) 
+- [readxl](https://cran.r-project.org/package=readxl) 
+- [ggrepel](https://cran.r-project.org/package=ggrepel)  
+ 
 ### Getting started
 
 1. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).  
@@ -63,10 +66,9 @@ The following R packages are used (all available on CRAN):
 3. A brief description of all scripts (contained in [R](https://github.com/HFAnalyticsLab/IAPT/tree/master/R)) is given below:
 
 -  **00_SetUp.R** - loads packages, defines functions for creating graphs
--  **01_CrossSec_Data_Vis.R** - creates graphs showing variation within 2018/19 by demographic group
--  **02_Longit_Data_Vis.R** - creates graphs showing variation from 2015/16 - 2018/19 by demographic group
-
-**00_SetUp.R** should be run first - order is unimportant for other scripts. 
+-  **01_Clean_CrossSec_Depriv_Data.R** - creates graphs showing variation within 2018/19 by demographic group
+-  **02_Clean_Longit_Depriv_Data.R** - creates graphs showing variation from 2015/16 - 2018/19 by demographic group
+-  **03_Create_Data_Vis.R** - creates plots showing variation by IMD deprivation level, both within 2018/19 and from 2015/16 - 2018/19
 
 ### Technical Appendix
 
