@@ -12,10 +12,12 @@ Long_Depriv_England$VariableA_recode <- factor(Long_Depriv_England$VariableA_rec
 Long_Depriv_England$label[Long_Depriv_England$VariableA_recode == "10\n(least deprived)" & Long_Depriv_England$Year == "2018/2019"] <- "10\n(least\ndeprived)"
 Long_Depriv_England$label[Long_Depriv_England$VariableA_recode == "1\n(most deprived)" & Long_Depriv_England$Year == "2018/2019"] <- "1\n(most\ndeprived)"
 
+# Change formatting for years in longit. data
+Long_Depriv_England$Year<-gsub('/20', '/', Long_Depriv_England$Year)
 
 # Plot and save figures ------------------------------------------------------------
 ## Cross-sec 2018/19 data
-Percent_Treated <- bar_fun_red_blue_perc(Cross_Depriv_England_IAPT_18_19, "VariableA_recode", "PercentFinishedTreatment") + scale_y_continuous(labels = function(x) paste0(x, "%"), limits = c(0, 50)) + ylab("Percentage of treated referrals")
+Percent_Treated <- bar_fun_red_blue_perc(Cross_Depriv_England_IAPT_18_19, "VariableA_recode", "PercentFinishedTreatment") + scale_y_continuous(labels = function(x) paste0(x, "%"), limits = c(0, 50)) + ylab("Percentage of referrals treated")
 ggsave(filename = here("Outputs", "Percent_Treated.png"), Percent_Treated, width = 210, height = 150, units = "mm")
 
 Count_Referrals <- bar_fun_red_blue_count(Cross_Depriv_England_IAPT_18_19, "VariableA_recode", "CountEndedReferrals") + scale_y_continuous(labels = scales::comma, limits = c(0, 210000)) + ylab("Number of referrals")
