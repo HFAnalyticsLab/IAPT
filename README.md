@@ -1,7 +1,9 @@
 
 # Variation in IAPT annual data
 
-This project takes the [annual IAPT data](https://digital.nhs.uk/data-and-information/publications/statistical/psychological-therapies-annual-reports-on-the-use-of-iapt-services) published by NHS Digital and creates graphs showing variation by Index of Multiple Deprivation (IMD) deprivation decile. 
+This repo contains the scripts used for creating the figures in the medium blog ["Inequalities in English NHS talking therapy services: What can the data tell us?"](https://towardsdatascience.com/inequalities-in-english-nhs-talking-therapy-services-what-can-the-data-tell-us-4f2ba5334629?).
+
+The scripts use the publicly available [annual IAPT data](https://digital.nhs.uk/data-and-information/publications/statistical/psychological-therapies-annual-reports-on-the-use-of-iapt-services) published by NHS Digital and creates graphs showing variation by Index of Multiple Deprivation (IMD) deprivation decile. 
 
 #### Status: In Progress
 
