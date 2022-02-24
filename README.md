@@ -5,7 +5,7 @@ This repo contains the scripts used for creating the figures in the medium blog 
 
 The scripts use the publicly available [annual IAPT data](https://digital.nhs.uk/data-and-information/publications/statistical/psychological-therapies-annual-reports-on-the-use-of-iapt-services) published by NHS Digital and creates graphs showing variation by Index of Multiple Deprivation (IMD) deprivation decile. 
 
-#### Status: In Progress
+#### Status: complete
 
 ## Contents
 * [Project Description](https://github.com/HFAnalyticsLab/IAPT/blob/master/README.md#project-description)
